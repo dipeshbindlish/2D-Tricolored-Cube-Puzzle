@@ -40,7 +40,7 @@
             }
         </style>
         <script>
-            var ansMoves=5;
+            var ansMoves;
             var ans,arr;
             function checkInput(){
                 var a= document.getElementById('cubeInput').value;
@@ -103,7 +103,7 @@
             }
             function execution(){
                 arr=document.getElementById('cubeInput').value;
-                document.getElementById('cubeInput').readOnly=true;
+                ansMoves=5;
                 calc(arr,"",0);
                 var i=0;
                 var s=ans.length/9;
