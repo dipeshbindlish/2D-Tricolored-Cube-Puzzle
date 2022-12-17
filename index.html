@@ -87,8 +87,7 @@
                         document.getElementById(i).style.backgroundColor='white';
                         error=1;
                         document.getElementById("InputMsg").style.display="block";
-                        document.getElementById("message").innerText="Input should contains only r g b";
-                        document.getElementById("message").innerText="Input should contains only r g b";
+                        document.getElementById("message").innerText="Kindly Input only 'r' 'g' or 'b'";
                     }
                 }
                 if(n==9 && error==0){
@@ -193,15 +192,15 @@
                 <br>Let's find out if you were able to solve within those minimum moves.</p>
                     </p>
                 </div>
+                <div style="float: left">
                 <input type="text" id="cubeInput" maxlength="9" onkeyup="checkInput()" placeholder="Enter Only r g b without any space" style="width: 500px;" >
-                <div style="float: right;">
-                <div id="InputMsg" class="inputmessgae">
-                    <p id="message" class="message" >kkkk</p>
                 </div>
-                <div style="height: 50px;">
+                <div style="height: 50px;float: left">
                     <button id="execute" onclick="execution()" style="height:20px;width:70px;margin-left:20px" disabled="true">Solve</button>
                 </div>
-            </div>
+                <div id="InputMsg" class="inputmessgae">
+                    <p id="message" class="message" ></p>
+                </div>
             </div>
             <div class="showCube">
                 <table class="size1" border="1p">
@@ -330,6 +329,17 @@
         </div>
     <div style="clear: left;position: relative; bottom: 1px;">
         <p style="margin-left: 10px; margin-top: 50px; font-size:14px">There can be multiple ways to solve the puzzle within minimum steps. You are still a winner if you solved it within minimum moves but steps were different.</p>
+
+    </div>
+    <div style="position: relative; bottom: 1px; right: 15px; left: 88%">
+        <p style="font-size:20px">
+            Published By-
+            <br>
+            <br>
+            Dipesh Bindlish
+            <br>
+            Robin Kumar
+        </p>
 
     </div>
     </body>
